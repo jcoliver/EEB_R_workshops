@@ -1,0 +1,23 @@
+---
+title: "My First Markdown"
+author: "Jeff Oliver"
+date: "September 14, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Our first markdown for EEB workshop.
+
+<!-- eval means the code doesn't display -->
+```{r echo = FALSE}
+# echo means the code doesn't display
+plot(x = iris$Sepal.Length,
+     y = iris$Sepal.Width,
+     xlab = "Sepal Length",
+     ylab = "Sepal Width",
+     main = "Iris measurements")
+```
+
